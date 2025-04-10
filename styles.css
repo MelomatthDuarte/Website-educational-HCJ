@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "National Park", sans-serif;
+    font-style: normal;
+    font-optical-sizing: auto;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --prim: #7659ff;
+    --secondary: #55fd95;
+    --gradient:linear-gradient(105.37deg, #7659ff 0%, #55fd95 50%, #7659ff 100%);
+    --white: #fff;
+    --black: #000;
+    
+    --nunito-font: "Nunito", sans-serif;
+    --national-font: "National Park", sans-serif;
+
+    --transition:.3s;
+    --transition2:.6s;
+}
+
+section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 12%;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+/* HERO HEADER */
+.hero_header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* TOP NAV */
+.top_nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12%;
+    height: 70px;
+    background-image: linear-gradient(90deg, #7689fe 0% , #ea55ef 35% , #ea55ef 57% , #7689fe 100% );
+    color: var(--white);
+}
+.tn_info{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.tn_det{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.tn_det i{
+    font-size: 1.3rem;
+}
+.tn h5{
+    font-weight: 500;
+}
+.tn_det h5 span{
+    font-weight: 600;
+}
+.top_nav .tn_info:last-child .tn_det:hover{
+    color: var(--black) !important;
+    cursor: pointer;
+}
+.tn_icon{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.tn_icon i{
+    font-size: 1.2rem;
+    width: 50px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: none;
+    border-bottom: none;
+    transition: var(--transition);
+}
+.tn_icon i:hover{
+    background-color: var(--white);
+    color: var(--black);
+    cursor: pointer;
+}
